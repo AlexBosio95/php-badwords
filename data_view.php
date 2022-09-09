@@ -16,6 +16,7 @@
     ?>
 
     <h1>La tua parola da cancellare è <?php echo $wordcrypt; ?></h1>
+    <h5>Parola non criptata (<?php echo $word; ?>)</h5>
 
 </body>
 
