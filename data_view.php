@@ -10,10 +10,12 @@
 <body>
 
     <?php
-        $word = $_POST['word']
+        $word = $_POST['word'];
+
+        $wordcrypt = str_replace($word, '***', $word)
     ?>
 
-    <h1>La tua parola da cancellare è <?php echo $word; ?></h1>
+    <h1>La tua parola da cancellare è <?php echo $wordcrypt; ?></h1>
 
 </body>
 
