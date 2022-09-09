@@ -4,19 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Word</title>
 </head>
 
 <body>
 
     <?php
         $word = $_POST['word'];
-
-        $wordcrypt = str_replace($word, '***', $word)
+        $text = 'Lorem ipsum dolor sit amet';
+        $textcrypt = str_replace($word, '***', $text)
     ?>
 
-    <h1>La tua parola da cancellare è <?php echo $wordcrypt; ?></h1>
-    <h5>Parola non criptata (<?php echo $word; ?>)</h5>
+    <p>Testo con parola criptata: <?php echo $textcrypt; ?></p>
 
 </body>
 
