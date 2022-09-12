@@ -12,10 +12,12 @@
     <?php
         $word = $_POST['word'];
         $text = 'Lorem ipsum dolor sit amet';
-        $textcrypt = str_replace($word, '***', $text)
+        $textcrypt = str_replace($word, '***', $text);
+        $textcount = strlen($textcrypt);
     ?>
 
     <p>Testo con parola criptata: <?php echo $textcrypt; ?></p>
+    <p>lunghezza stringa: <?php echo $textcount; ?></p>
 
 </body>
 
